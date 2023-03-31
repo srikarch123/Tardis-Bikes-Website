@@ -12,10 +12,6 @@ body {
   font-size: 13px;
   height: 100%;
 }
-body.dark-mode {
-  background-color: #333;
-  color: #fff;
-}
 
 #page {
   margin: 0 auto;
@@ -194,3 +190,29 @@ a:hover {
   padding-top: 10px;
   margin: 0 auto;
 }
+.dark {
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  transform: translateX(-50%);
+}
+
+body.dark-mode {
+  background-color: #665858ca;
+  color: #f0eded;
+}
+#dark-mode-toggle {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-image: linear-gradient(to right, #2c3e50, #3498db);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+  background-image: linear-gradient(to right, #2980b9, #1abc9c);
+}
+
